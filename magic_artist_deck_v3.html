@@ -2062,11 +2062,11 @@ body.present-mode #present-arrows { display:flex !important; }
         </defs>
 
         <!-- Section labels -->
-        <text class="label-release" x="255" y="66" text-anchor="middle" fill="white" font-family="Gilroy,sans-serif" font-weight="700" font-size="16" filter="url(#txt-glow)" opacity="0.3" data-en="Release" data-fr="Sortie">Release
-          <animate attributeName="opacity" values="0.3;1;1;0.7" keyTimes="0;0.3;0.7;1" dur="2s" begin="0.5s" fill="freeze"/>
+        <text id="label-release" x="255" y="66" text-anchor="middle" fill="white" font-family="Gilroy,sans-serif" font-weight="700" font-size="16" filter="url(#txt-glow)" opacity="0.3" data-en="Release" data-fr="Sortie">Release
+          <animate id="anim-release" attributeName="opacity" values="0.3;1;1;0.7" keyTimes="0;0.3;0.7;1" dur="2s" begin="indefinite" fill="freeze"/>
         </text>
-        <text class="label-tour" x="910" y="20" text-anchor="middle" fill="white" font-family="Gilroy,sans-serif" font-weight="700" font-size="16" filter="url(#txt-glow)" opacity="0.3" data-en="Tour" data-fr="Tournée">Tour
-          <animate attributeName="opacity" values="0.3;1;1;0.7" keyTimes="0;0.3;0.7;1" dur="2s" begin="2.5s" fill="freeze"/>
+        <text id="label-tour" x="910" y="20" text-anchor="middle" fill="white" font-family="Gilroy,sans-serif" font-weight="700" font-size="16" filter="url(#txt-glow)" opacity="0.3" data-en="Tour" data-fr="Tournée">Tour
+          <animate id="anim-tour" attributeName="opacity" values="0.3;1;1;0.7" keyTimes="0;0.3;0.7;1" dur="2s" begin="indefinite" fill="freeze"/>
         </text>
         <!-- dashed divider removed -->
 
@@ -3342,6 +3342,13 @@ function go(n) {
     }
   } else if (cur !== 0) {
     go._shimmerActive = false;
+  }
+  /* Trigger Release/Tour glow on slide 9 (index 8) */
+  if (cur === 8) {
+    var r = document.getElementById('anim-release');
+    var t = document.getElementById('anim-tour');
+    if (r) { document.getElementById('label-release').setAttribute('opacity','0.3'); r.beginElement(); }
+    if (t) setTimeout(function(){ document.getElementById('label-tour').setAttribute('opacity','0.3'); t.beginElement(); }, 2000);
   }
 }
 function next() { if (cur < TOTAL - 1) go(cur + 1); }
