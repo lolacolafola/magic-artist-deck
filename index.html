@@ -2209,10 +2209,10 @@ body.present-mode #present-arrows { display:flex !important; }
         <text x="1176" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.78)" font-family="Gilroy,sans-serif" font-size="9.5" data-en="After" data-fr="Après">After</text>
 
         <!-- Legend -->
-        <line x1="1191" y1="343" x2="1223" y2="343" stroke="#1FCEFF" stroke-width="2.5"/>
-        <text x="1328" y="347" text-anchor="end" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Magic Engagement" data-fr="Engagement Magic">Magic Engagement</text>
-        <line x1="1145" y1="358" x2="1177" y2="358" stroke="rgba(255,255,255,0.3)" stroke-width="1.8"/>
-        <text x="1328" y="362" text-anchor="end" fill="rgba(255,255,255,0.5)" font-family="Gilroy,sans-serif" font-size="11" data-en="Traditional Engagement" data-fr="Engagement traditionnel">Traditional Engagement</text>
+        <line id="leg-line-magic" x1="1191" y1="343" x2="1223" y2="343" stroke="#1FCEFF" stroke-width="2.5"/>
+        <text id="leg-text-magic" x="1328" y="347" text-anchor="end" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Magic Engagement" data-fr="Engagement Magic">Magic Engagement</text>
+        <line id="leg-line-trad" x1="1191" y1="358" x2="1223" y2="358" stroke="rgba(255,255,255,0.3)" stroke-width="1.8"/>
+        <text id="leg-text-trad" x="1328" y="362" text-anchor="end" fill="rgba(255,255,255,0.5)" font-family="Gilroy,sans-serif" font-size="11" data-en="Traditional Engagement" data-fr="Engagement traditionnel">Traditional Engagement</text>
         </g>
       </svg>
     </div>
@@ -3526,9 +3526,28 @@ ctrInput.addEventListener('keydown', function(e) {
 });
 ctrInput.addEventListener('blur', commitCtrInput);
 if (params.get('lang') === 'fr') setLang('fr');
+repositionLegendLines();
 go(initialSlide);
 
 /* ── Language Switcher ── */
+function repositionLegendLines() {
+  var pairs = [
+    { text: 'leg-text-magic', line: 'leg-line-magic' },
+    { text: 'leg-text-trad',  line: 'leg-line-trad' }
+  ];
+  pairs.forEach(function(p) {
+    var txt = document.getElementById(p.text);
+    var ln  = document.getElementById(p.line);
+    if (!txt || !ln) return;
+    var tw = txt.getComputedTextLength();
+    var tx = parseFloat(txt.getAttribute('x'));
+    var x2 = tx - tw - 8;
+    var x1 = x2 - 32;
+    ln.setAttribute('x1', x1);
+    ln.setAttribute('x2', x2);
+  });
+}
+
 function setLang(lang) {
   currentLang = lang;
   // Update toggle buttons
@@ -3557,6 +3576,8 @@ function setLang(lang) {
     var text = el.getAttribute('data-' + lang);
     if (text) el.textContent = text;
   });
+  // Reposition legend lines to sit just left of their text
+  repositionLegendLines();
   // Update revenue simulator dynamic labels
   try { recalculate(); } catch(e) {}
   // Persist in URL
