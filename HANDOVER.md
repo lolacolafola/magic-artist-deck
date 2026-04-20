@@ -96,7 +96,16 @@ Any new asset referenced from `celine-dion/index.html` needs `../brand elements/
 
 ### Celine deck — next session (2026-04-21)
 - **Slide 7 (s5, "Always on")**: reframe from *"Keep them coming back between concerts"* to a **"Keep rewarding them"** framing. The current heading is engagement-oriented; Laura wants it closer to reward/recognition of loyalty.
-- **Slide 6 (s7, momentum graph "Make every moment bigger")**: open question — **does Céline need this slide at all?** If kept, Laura wants it reframed around *"giving space to MORE of her fans"* (i.e. the 8.5M excluded, the scale opportunity) rather than the generic release/tour activity curve. If cut, the deck drops to 9 slides.
+- **Slide 6 (s7, momentum graph "Make every moment bigger")** — **keep the graph, reload it with fan-count meaning.** Rework plan:
+  - Change Y axis from abstract "engagement" to **fans reached** (1M → 9M markers)
+  - Magic curve sits flat at 9M across the whole arc
+  - Traditional curve hugs venue capacity — near-zero most of the time, spiking to 480K only during the 16 concert nights, falling back after
+  - The *gap* between the two curves = the **8.5M extra fans Magic brings into every peak** — that's the visual story
+  - New heading: *"Room for 9 million at every peak"* / *"De la place pour 9 millions à chaque sommet"*
+  - New body: *"At every moment of the tour, the venue has a capacity — 480,000. Magic doesn't. Every peak, every milestone, every announcement reaches all 9 million fans."*
+  - Peak labels (Eiffel teaser, Lottery, Opening night, Final encore, Monthly drops) stay as-is but now carry implicit 9M scale
+  - Tag change: "The Paris 2026 arc" → "Capacity" / "Capacité" (or similar)
+- **Alternative still on the table:** move the Fanverse solar system to the momentum slot with the "480K seats / Fanverse for 9M" framing and drop to 9 slides. Decide tomorrow whether this or the momentum-reframe is stronger (or do both — solar system at original position with capacity framing, *plus* the reframed momentum graph).
 - **"Your" vs "Céline" audit**: the deck still uses second-person "your fans / your return to Paris" in many places. Since this is pitched to Céline's manager (not to Céline directly), Laura wants a later pass to shift to third-person ("Céline's fans", "her return to Paris") where it reads better.
 - Slide 5 (s-experiences) phase-card copy is currently ~25-30 words per card and shows all 4 at once — Laura approved this density. Further tuning TBD.
 
