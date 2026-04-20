@@ -94,9 +94,16 @@ Any new asset referenced from `celine-dion/index.html` needs `../brand elements/
 
 ## Open / likely-next items
 
-- Laura mentioned the "cards row" on Magic AI could still have ideas tweaked — she was live-editing when we stopped. Ask before changing anything else there.
+### Celine deck — next session (2026-04-21)
+- **Slide 7 (s5, "Always on")**: reframe from *"Keep them coming back between concerts"* to a **"Keep rewarding them"** framing. The current heading is engagement-oriented; Laura wants it closer to reward/recognition of loyalty.
+- **Slide 6 (s7, momentum graph "Make every moment bigger")**: open question — **does Céline need this slide at all?** If kept, Laura wants it reframed around *"giving space to MORE of her fans"* (i.e. the 8.5M excluded, the scale opportunity) rather than the generic release/tour activity curve. If cut, the deck drops to 9 slides.
+- **"Your" vs "Céline" audit**: the deck still uses second-person "your fans / your return to Paris" in many places. Since this is pitched to Céline's manager (not to Céline directly), Laura wants a later pass to shift to third-person ("Céline's fans", "her return to Paris") where it reads better.
+- Slide 5 (s-experiences) phase-card copy is currently ~25-30 words per card and shows all 4 at once — Laura approved this density. Further tuning TBD.
+
+### Older items (still open)
 - If a new artist request comes in: follow the per-customer convention above. Example tag name: `bad-bunny`.
 - The original MJ source video for the current welcome still lives at the repo root (~5.5MB, untracked). Laura may want to delete or `.gitignore` it eventually.
+- Phone mockup PNG in `celine-dion/Assets/Deck Edits/` has "Celine Dion" (no accent) baked into the Fanverse image. Needs a new Figma export to fix the accent.
 
 ## Key commands we used a lot
 

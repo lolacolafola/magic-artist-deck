@@ -1908,6 +1908,15 @@ body.present-mode #present-arrows { display:flex !important; }
   S-EXPERIENCES — THREE KEY EXPERIENCES FOR ARTISTS
 ═══════════════════════════════════════ -->
 <div class="slide" id="s-experiences">
+<style>
+  /* Four cards, all visible, trimmed text */
+  #s-experiences .phase-row { display: flex; gap: 20px; padding-top: 60px; flex: 1; }
+  #s-experiences .phase-card { flex: 1; display: flex; flex-direction: column; gap: 14px; }
+  #s-experiences .phase-image { aspect-ratio: 4/3; border-radius: 16px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); overflow: hidden; position: relative; }
+  #s-experiences .phase-kicker { font-family:'Gilroy',sans-serif; font-weight:700; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; }
+  #s-experiences .phase-title { font-family:'Gilroy',sans-serif; font-weight:800; font-size: 22px; color:#fff; margin-top: 4px; line-height: 1.15; }
+  #s-experiences .phase-body { font-size: 15px; font-weight: 300; color: var(--muted); line-height: 1.55; margin-top: 8px; }
+</style>
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
@@ -1925,53 +1934,53 @@ body.present-mode #present-arrows { display:flex !important; }
       </p>
     </div>
 
-    <div style="display:flex;gap:20px;padding-top:30px;">
+    <div class="phase-row">
       <!-- AVANT -->
-      <div style="flex:1;display:flex;flex-direction:column;gap:14px;">
-        <div style="aspect-ratio:4/3;border-radius:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);overflow:hidden;position:relative;">
+      <div class="phase-card">
+        <div class="phase-image">
           <img src="Assets/Deck Edits/Game Page Celine Dion.png" aria-hidden="true" style="position:absolute;inset:-10%;width:120%;height:120%;object-fit:cover;filter:blur(28px) saturate(1.1);opacity:0.9;">
-          <img src="Assets/Deck Edits/Game Page Celine Dion.png" alt="Devotion Leaderboard" style="position:relative;z-index:1;width:100%;height:100%;object-fit:contain;transform:scale(1.2);" onerror="this.style.display='none'">
+          <img src="Assets/Deck Edits/Game Page Celine Dion.png" alt="Devotion Leaderboard" style="position:relative;z-index:1;width:100%;height:100%;object-fit:contain;transform:scale(1.15);" onerror="this.style.display='none'">
         </div>
         <div>
-          <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#1FCEFF;" data-en="Before" data-fr="Avant">Before</div>
-          <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:20px;color:#fff;margin-top:4px;" data-en="The Devotion Leaderboard" data-fr="Le Classement des plus dévoués">The Devotion Leaderboard</div>
-          <div style="font-size:15px;font-weight:300;color:var(--muted);margin-top:6px;line-height:1.55;" data-en="A Céline quiz, longest playlists, album collections, years of following. The most devoted fans rise to the top and earn their priority in line — a fair, transparent celebration of loyalty." data-fr="Un quiz sur Céline, les playlists les plus longues, les collections d'albums, les années de fidélité. Les plus dévoués remontent en tête et gagnent leur priorité — une célébration juste et transparente de la fidélité.">A Céline quiz, longest playlists, album collections, years of following. The most devoted fans rise to the top and earn their priority in line — a fair, transparent celebration of loyalty.</div>
+          <div class="phase-kicker" style="color:#1FCEFF;" data-en="Before" data-fr="Avant">Before</div>
+          <div class="phase-title" data-en="The Devotion Leaderboard" data-fr="Le Classement des plus dévoués">The Devotion Leaderboard</div>
+          <div class="phase-body" data-en="Fans prove their devotion through a Céline quiz, streaming history and album collections. The most loyal earn priority in the ticket queue — a fair, transparent celebration." data-fr="Les fans prouvent leur dévouement à travers un quiz sur Céline, leur historique streaming et leurs collections d'albums. Les plus fidèles gagnent leur priorité — une célébration juste et transparente.">Fans prove their devotion through a Céline quiz, streaming history and album collections. The most loyal earn priority in the ticket queue — a fair, transparent celebration.</div>
         </div>
       </div>
       <!-- JOUR J -->
-      <div style="flex:1;display:flex;flex-direction:column;gap:14px;">
-        <div style="aspect-ratio:4/3;border-radius:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);overflow:hidden;position:relative;">
+      <div class="phase-card">
+        <div class="phase-image">
           <img src="Assets/Deck Edits/Magic Pulse Celine Dion.png" aria-hidden="true" style="position:absolute;inset:-10%;width:120%;height:120%;object-fit:cover;filter:blur(28px) saturate(1.1);opacity:0.9;">
-          <img src="Assets/Deck Edits/Magic Pulse Celine Dion.png" alt="Paris Treasure Hunt" style="position:relative;z-index:1;width:100%;height:100%;object-fit:contain;transform:scale(1.2);" onerror="this.style.display='none'">
+          <img src="Assets/Deck Edits/Magic Pulse Celine Dion.png" alt="Paris Treasure Hunt" style="position:relative;z-index:1;width:100%;height:100%;object-fit:contain;transform:scale(1.15);" onerror="this.style.display='none'">
         </div>
         <div>
-          <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#8C3CFF;" data-en="Concert Day" data-fr="Jour J">Concert Day</div>
-          <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:20px;color:#fff;margin-top:4px;" data-en="The Paris Treasure Hunt" data-fr="La chasse au trésor parisienne">The Paris Treasure Hunt</div>
-          <div style="font-size:15px;font-weight:300;color:var(--muted);margin-top:6px;line-height:1.55;" data-en="An international, Pokémon-Go-style hunt takes over Paris on concert days. Teams from around the world race through the city. The top 25 earn the ultimate reward — a meeting with Céline." data-fr="Les jours de concert, une chasse au trésor internationale façon Pokémon Go prend vie dans Paris. Des équipes du monde entier courent à travers la ville. Les 25 meilleurs gagnent la récompense ultime — une rencontre avec Céline.">An international, Pokémon-Go-style hunt takes over Paris on concert days. Teams from around the world race through the city. The top 25 earn the ultimate reward — a meeting with Céline.</div>
+          <div class="phase-kicker" style="color:#8C3CFF;" data-en="Concert Day" data-fr="Jour J">Concert Day</div>
+          <div class="phase-title" data-en="The Paris Treasure Hunt" data-fr="La chasse au trésor parisienne">The Paris Treasure Hunt</div>
+          <div class="phase-body" data-en="On concert days, teams from every country race through Paris in a Pokémon-Go-style treasure hunt. The top 25 win the ultimate prize — a meeting with Céline." data-fr="Les jours de concert, des équipes venues du monde entier courent dans Paris pour une chasse au trésor façon Pokémon Go. Les 25 meilleurs gagnent la récompense ultime — une rencontre avec Céline.">On concert days, teams from every country race through Paris in a Pokémon-Go-style treasure hunt. The top 25 win the ultimate prize — a meeting with Céline.</div>
         </div>
       </div>
       <!-- PENDANT -->
-      <div style="flex:1;display:flex;flex-direction:column;gap:14px;">
-        <div style="aspect-ratio:4/3;border-radius:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);overflow:hidden;position:relative;">
+      <div class="phase-card">
+        <div class="phase-image">
           <img src="Assets/Deck Edits/Fan Chat Celine Dion.png" aria-hidden="true" style="position:absolute;inset:-10%;width:120%;height:120%;object-fit:cover;filter:blur(28px) saturate(1.1);opacity:0.9;">
-          <img src="Assets/Deck Edits/Fan Chat Celine Dion.png" alt="The Living Concert" style="position:relative;z-index:1;width:100%;height:100%;object-fit:contain;transform:scale(1.2);" onerror="this.style.display='none'">
+          <img src="Assets/Deck Edits/Fan Chat Celine Dion.png" alt="The Living Concert" style="position:relative;z-index:1;width:100%;height:100%;object-fit:contain;transform:scale(1.15);" onerror="this.style.display='none'">
         </div>
         <div>
-          <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#FD3E84;" data-en="In the Venue" data-fr="Dans la salle">In the Venue</div>
-          <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:20px;color:#fff;margin-top:4px;" data-en="The Living Concert" data-fr="Le concert vivant">The Living Concert</div>
-          <div style="font-size:15px;font-weight:300;color:var(--muted);margin-top:6px;line-height:1.55;" data-en="Fans co-create the night: trivia between songs, a vote for the greatest Céline song of all time, and a live poll for an encore with a unique orchestration. Every show becomes one of a kind." data-fr="Les fans co-créent la soirée : quiz entre les titres, vote pour la plus grande chanson de Céline, et un sondage en direct pour un rappel avec une orchestration unique. Chaque soir devient unique.">Fans co-create the night: trivia between songs, a vote for the greatest Céline song of all time, and a live poll for an encore with a unique orchestration. Every show becomes one of a kind.</div>
+          <div class="phase-kicker" style="color:#FD3E84;" data-en="In the Venue" data-fr="Dans la salle">In the Venue</div>
+          <div class="phase-title" data-en="The Living Concert" data-fr="Le concert vivant">The Living Concert</div>
+          <div class="phase-body" data-en="Inside the venue, fans vote for the greatest Céline song of all time and choose a live encore with a unique orchestration. Every night becomes one of a kind." data-fr="Dans la salle, les fans votent pour la plus grande chanson de Céline et choisissent un rappel en direct avec une orchestration unique. Chaque soir devient inoubliable.">Inside the venue, fans vote for the greatest Céline song of all time and choose a live encore with a unique orchestration. Every night becomes one of a kind.</div>
         </div>
       </div>
       <!-- APRÈS -->
-      <div style="flex:1;display:flex;flex-direction:column;gap:14px;">
-        <div style="aspect-ratio:4/3;border-radius:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);overflow:hidden;position:relative;">
+      <div class="phase-card">
+        <div class="phase-image">
           <img src="Assets/Deck Edits/Shop Celine Dion.png" aria-hidden="true" style="position:absolute;inset:-10%;width:120%;height:120%;object-fit:cover;filter:blur(28px) saturate(1.1);opacity:0.9;">
-          <img src="Assets/Deck Edits/Shop Celine Dion.png" alt="The Months That Follow" style="position:relative;z-index:1;width:100%;height:100%;object-fit:contain;transform:scale(1.2);" onerror="this.style.display='none'">
+          <img src="Assets/Deck Edits/Shop Celine Dion.png" alt="The Months That Follow" style="position:relative;z-index:1;width:100%;height:100%;object-fit:contain;transform:scale(1.15);" onerror="this.style.display='none'">
         </div>
         <div>
-          <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#20D4B8;" data-en="After" data-fr="Après">After</div>
-          <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:20px;color:#fff;margin-top:4px;" data-en="The Months That Follow" data-fr="Les mois qui suivent">The Months That Follow</div>
-          <div style="font-size:15px;font-weight:300;color:var(--muted);margin-top:6px;line-height:1.55;" data-en="After the final encore, Magic keeps the bond alive. Monthly drops of the best moments shared with the 9 million, recognition for those who lived September and October with you, and exclusive content so no one feels left behind." data-fr="Après le dernier rappel, Magic garde le lien vivant. Chaque mois, les meilleurs moments partagés avec les 9 millions, une reconnaissance pour ceux qui ont vécu septembre et octobre avec vous, et du contenu exclusif pour que personne ne se sente laissé de côté.">After the final encore, Magic keeps the bond alive. Monthly drops of the best moments shared with the 9 million, recognition for those who lived September and October with you, and exclusive content so no one feels left behind.</div>
+          <div class="phase-kicker" style="color:#20D4B8;" data-en="After" data-fr="Après">After</div>
+          <div class="phase-title" data-en="The Months That Follow" data-fr="Les mois qui suivent">The Months That Follow</div>
+          <div class="phase-body" data-en="After the final encore, the bond keeps going. Monthly drops of the best moments reach all 9 million fans, rewarding everyone who lived September and October with Céline." data-fr="Après le dernier rappel, le lien continue. Chaque mois, les meilleurs moments partagés avec les 9 millions de fans, pour récompenser ceux qui ont vécu septembre et octobre avec Céline.">After the final encore, the bond keeps going. Monthly drops of the best moments reach all 9 million fans, rewarding everyone who lived September and October with Céline.</div>
         </div>
       </div>
     </div>
