@@ -3420,7 +3420,9 @@ function setLang(lang) {
   try { recalculate(); } catch(e) {}
   // Persist in URL
   var url = new URL(window.location.href);
-  if (lang === 'fr') { url.searchParams.set('lang', 'fr'); } else { url.searchParams.delete('lang'); }
+  if (lang === 'fr') { url.searchParams.set('lang', 'fr'); }
+  else if (clientMode) { url.searchParams.set('lang', 'en'); }
+  else { url.searchParams.delete('lang'); }
   window.history.replaceState({}, '', url.toString());
 }
 
